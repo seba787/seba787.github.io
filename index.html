@@ -1,51 +1,58 @@
 <!DOCTYPE HTML>
 <!--
-	Aerial by HTML5 UP
-	html5up.net | @n33co
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Sebastián Vázquez</title>
+		<title></seba></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+	<body class="is-loading">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Sebastián Vázquez</h1>
-						<p>Coder &nbsp;&bull;&nbsp; Video Editor &nbsp;&bull;&nbsp; General Geek</p>
-						<nav>
-							<ul>
-								<li><a href="http://www.twitter.com/naitsabes" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="http://www.facebook.com/sebastian.leonardo" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="http://www.github.com/seba787" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:naitsabes787@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.png" alt="" /></span>
+
+							<p>Front-end Developer</p>
+						</header>
+
+						<footer>
+							<ul class="icons">
+								<li><a href="https://twitter.com/naitsabes" class="fa-twitter">Twitter</a></li>
+								<li><a href="https://www.instagram.com/seba787/" class="fa-instagram">Instagram</a></li>
 							</ul>
-						</nav>
-					</header>
+						</footer>
+					</section>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy; 2015 Sebastián Vázquez. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+						<ul class="copyright">
+							<li>&copy; Sebastian L Vazquez-Vega</li>
+						</ul>
 					</footer>
 
 			</div>
-		</div>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
 	</body>
 </html>
